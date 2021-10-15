@@ -1,1 +1,1 @@
-# AI-project1-pathfindingA-
+# AI-project1-pathfindingAstar
