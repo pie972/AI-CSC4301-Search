@@ -64,7 +64,6 @@ public class Grid : MonoBehaviour
 				}
 			}
 		}
-
 		return neighbours;
 	}
 
