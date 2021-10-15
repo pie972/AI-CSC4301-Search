@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-public class Pathfinding : MonoBehaviour {
-
+public class Pathfinding : MonoBehaviour 
+{
 	public Transform seeker, target;
 	Grid grid;
 	int count1 = 0;
