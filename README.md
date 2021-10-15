@@ -6,11 +6,16 @@ While running this project using unity, you can see different paths found by eac
 
 
 ## Youtube Video
-https://www.youtube.com/watch?v=YB2iMI6nShw&t=34s
+https://www.youtube.com/watch?v=YB2iMI6nShw&t
+[![AI-CSC4301-Search](https://img.youtube.com/vi/YB2iMI6nShw&t/0.jpg)](https://www.youtube.com/watch?v=YB2iMI6nShw&t)
 
 
 ## Screenshots
 ![](Screenshots/1.PNG)
+![](Screenshots/2.PNG)
+![](Screenshots/3.PNG)
+![](Screenshots/4.PNG)
+![](Screenshots/5.PNG)
 
 
 ## References
