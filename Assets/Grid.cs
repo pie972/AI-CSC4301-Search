@@ -2,9 +2,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class Grid : MonoBehaviour
 {
-
 	public LayerMask unwalkableMask;
 	public Vector2 gridWorldSize;
 	public float nodeRadius;
@@ -13,6 +13,11 @@ public class Grid : MonoBehaviour
 	float nodeDiameter;
 	int gridSizeX, gridSizeY;
 
+	public List<Node> path;
+	public List<Node> pathDFS;
+	public List<Node> pathBFS;
+	public List<Node> pathUCS;
+
 	void Awake()
 	{
 		nodeDiameter = nodeRadius * 2;
@@ -20,6 +25,7 @@ public class Grid : MonoBehaviour
 		gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
 		CreateGrid();
 	}
+
 
 	void CreateGrid()
 	{
@@ -36,6 +42,7 @@ public class Grid : MonoBehaviour
 			}
 		}
 	}
+
 
 	public List<Node> GetNeighbours(Node node)
 	{
@@ -74,10 +81,7 @@ public class Grid : MonoBehaviour
 		return grid[x, y];
 	}
 
-	public List<Node> path;
-	public List<Node> pathUCS;
-	public List<Node> pathBFS;
-	public List<Node> pathDFS;
+
 	void OnDrawGizmos()
 	{
 		Gizmos.DrawWireCube(transform.position, new Vector3(gridWorldSize.x, 1, gridWorldSize.y));
@@ -89,16 +93,16 @@ public class Grid : MonoBehaviour
 				Gizmos.color = (n.walkable) ? Color.white : Color.red;
 				if (path != null)
 					if (path.Contains(n))
-						Gizmos.color = Color.cyan;
+						Gizmos.color = Color.black;
 				if (pathUCS != null)
 					if (pathUCS.Contains(n))
-						Gizmos.color = Color.green;
+						Gizmos.color = Color.yellow;
 				if (pathBFS != null)
 					if (pathBFS.Contains(n))
-						Gizmos.color = Color.black;
+						Gizmos.color = Color.blue;
 				if (pathDFS != null)
 					if (pathDFS.Contains(n))
-						Gizmos.color = Color.blue;
+						Gizmos.color = Color.cyan;
 				Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - .1f));
 			}
 		}
