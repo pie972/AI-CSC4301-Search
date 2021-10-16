@@ -7,6 +7,7 @@ While running this project using unity, you can see different paths found by eac
 
 ## Youtube Video
 Click on the Image !
+
 [![AI-CSC4301-Search](Screenshots/1.PNG)](https://www.youtube.com/watch?v=YB2iMI6nShw&t)
 
 ## Screenshots
