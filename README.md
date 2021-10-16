@@ -8,8 +8,6 @@ While running this project using unity, you can see different paths found by eac
 ## Youtube Video
 [![AI-CSC4301-Search](https://img.youtube.com/vi/YB2iMI6nShw&t/maxresdefault.jpg)](https://www.youtube.com/watch?v=YB2iMI6nShw&t)
 
-https://img.youtube.com/vi/YB2iMI6nShw&t/3.jpg
-
 ## Screenshots
 ![](Screenshots/1.PNG)
 ![](Screenshots/2.PNG)
